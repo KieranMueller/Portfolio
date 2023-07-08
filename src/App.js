@@ -6,6 +6,12 @@ import Contact from './components/Contact'
 import Nav from './components/Nav'
 import Resume from './components/Resume'
 
+// ideas/stories
+// completely fix mobile layout (remove hover effects etc, add moving or changing background?)
+// Add light or dark toggler.
+// add more content, projects, videos etc, pictures
+// add a little game or demo of something, add page just for demos?
+
 function App() {
     return (
         <Router>
