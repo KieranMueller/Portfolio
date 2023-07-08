@@ -8,7 +8,7 @@ export default function Nav() {
                 <Link class='navbar-brand' to={'/'}>
                     Kieran Mueller
                 </Link>
-                <div>
+                <div id='nav-options'>
                     <Link class='navbar-brand' to={'/projects'}>
                         Projects
                     </Link>
@@ -20,15 +20,16 @@ export default function Nav() {
                     </Link>
                 </div>
 
-                {/* <button
+                <button
                     class='navbar-toggler'
                     type='button'
+                    id='nav-burger'
                     data-bs-toggle='offcanvas'
                     data-bs-target='#offcanvasDarkNavbar'
                     aria-controls='offcanvasDarkNavbar'
                     aria-label='Toggle navigation'>
                     <span class='navbar-toggler-icon'></span>
-                </button> */}
+                </button>
                 <div
                     class='offcanvas offcanvas-end text-bg-dark'
                     tabindex='-1'

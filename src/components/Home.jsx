@@ -38,7 +38,6 @@ export default function Home() {
                     <div class='card bg-dark' id='desc-card'>
                         <div class='card-body' id='desc-text-div'>
                             <h5 class='card-text'>Hey There!</h5>
-                            []
                             <p class='card-text'>
                                 My name is Kieran and I'm a 24 year old,
                                 aspiring full-stack developer from Minneapolis,

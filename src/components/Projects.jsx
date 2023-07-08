@@ -2,6 +2,30 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Projects() {
+    let [cap, setCap] = React.useState('OFF')
+
+    const toggleCaption = () => {
+        if (cap === 'OFF') {
+            setCap('ON')
+            document.querySelector('#cap1').style.opacity = 0
+            document.querySelector('#cap2').style.opacity = 0
+            document.querySelector('#cap3').style.opacity = 0
+            document.querySelector('#cap4').style.opacity = 0
+            document.querySelector('#cap5').style.opacity = 0
+            document.querySelector('#cap6').style.opacity = 0
+            document.querySelector('#cap7').style.opacity = 0
+        } else if (cap === 'ON') {
+            document.querySelector('#cap1').style.opacity = 0.9
+            document.querySelector('#cap2').style.opacity = 0.9
+            document.querySelector('#cap3').style.opacity = 0.9
+            document.querySelector('#cap4').style.opacity = 0.9
+            document.querySelector('#cap5').style.opacity = 0.9
+            document.querySelector('#cap6').style.opacity = 0.9
+            document.querySelector('#cap7').style.opacity = 0.9
+            setCap('OFF')
+        }
+    }
+
     return (
         <div id='project-container'>
             <div id='carouselExampleIndicators' class='carousel slide'>
@@ -61,7 +85,9 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 1'
                         />
-                        <div class='carousel-caption d-none d-md-block'>
+                        <div
+                            class='carousel-caption d-none d-md-block'
+                            id='cap1'>
                             <h5>Jasper University (Personal Project)</h5>
                             <p>
                                 Humerous Cat University (single page app)
@@ -94,7 +120,9 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 2'
                         />
-                        <div class='carousel-caption d-none d-md-block'>
+                        <div
+                            class='carousel-caption d-none d-md-block'
+                            id='cap2'>
                             <h5>Dump N' Change (Personal Project)</h5>
                             <p>
                                 Single page app with full CRUD functionality.
@@ -120,7 +148,9 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 3'
                         />
-                        <div class='carousel-caption d-none d-md-block'>
+                        <div
+                            class='carousel-caption d-none d-md-block'
+                            id='cap3'>
                             <h5>My First CRUD App (Personal Project)</h5>
                             <p>
                                 Created a simple CRUD application with a Java
@@ -145,7 +175,9 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 4'
                         />
-                        <div class='carousel-caption d-none d-md-block'>
+                        <div
+                            class='carousel-caption d-none d-md-block'
+                            id='cap4'>
                             <h5>Twitter API (Cook Systems FastTrack'D)</h5>
                             <p>
                                 Implemented a functional Twitter (clone) API
@@ -174,7 +206,9 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 5'
                         />
-                        <div class='carousel-caption d-none d-md-block'>
+                        <div
+                            class='carousel-caption d-none d-md-block'
+                            id='cap5'>
                             <h5>Quiz API (Cook Systems FastTrack'D)</h5>
                             <p>
                                 Solo project created with Java Spring Boot and
@@ -200,7 +234,9 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 6'
                         />
-                        <div class='carousel-caption d-none d-md-block'>
+                        <div
+                            class='carousel-caption d-none d-md-block'
+                            id='cap6'>
                             <h5>Quizler (Cook Systems FastTrack'D)</h5>
                             <p>
                                 Javascript assignment implementing three utility
@@ -227,7 +263,9 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 6'
                         />
-                        <div class='carousel-caption d-none d-md-block'>
+                        <div
+                            class='carousel-caption d-none d-md-block'
+                            id='cap7'>
                             <h5>My First Website</h5>
                             <p>
                                 Created this website shortly after learning HTML
@@ -260,6 +298,12 @@ export default function Projects() {
                     <span class='visually-hidden'>Next</span>
                 </button>
             </div>
+            <button
+                onClick={toggleCaption}
+                className='btn btn-primary'
+                id='toggle-caption-btn'>
+                Toggle Caption: {cap}
+            </button>
         </div>
     )
 }
