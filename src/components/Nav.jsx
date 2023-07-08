@@ -6,6 +6,7 @@ export default function Nav() {
         <nav class='navbar navbar-dark bg-dark fixed-top' data-bs-theme='dark'>
             <div class='container-fluid'>
                 <Link class='navbar-brand' to={'/'}>
+                    <i id='home-icon' class='fa-solid fa-house'></i>
                     Kieran Mueller
                 </Link>
                 <div id='nav-options'>
@@ -22,8 +23,8 @@ export default function Nav() {
 
                 <button
                     class='navbar-toggler'
-                    type='button'
                     id='nav-burger'
+                    type='button'
                     data-bs-toggle='offcanvas'
                     data-bs-target='#offcanvasDarkNavbar'
                     aria-controls='offcanvasDarkNavbar'
@@ -46,45 +47,32 @@ export default function Nav() {
                         <ul class='navbar-nav justify-content-end flex-grow-1 pe-3'>
                             <li class='nav-item'>
                                 <Link
-                                    class='nav-link active'
+                                    class='nav-link'
+                                    aria-current='page'
+                                    to={'/'}>
+                                    Home
+                                </Link>
+                            </li>
+                            <li class='nav-item'>
+                                <Link
+                                    class='nav-link'
                                     aria-current='page'
                                     to={'/projects'}>
                                     Projects
                                 </Link>
                             </li>
                             <li class='nav-item'>
+                                <Link
+                                    class='nav-link'
+                                    aria-current='page'
+                                    to={'/resume'}>
+                                    Resume
+                                </Link>
+                            </li>
+                            <li class='nav-item'>
                                 <Link class='nav-link' to={'/contact'}>
                                     Contact
                                 </Link>
-                            </li>
-                            <li class='nav-item dropdown'>
-                                <Link
-                                    class='nav-link dropdown-toggle'
-                                    role='button'
-                                    data-bs-toggle='dropdown'
-                                    aria-expanded='false'>
-                                    Something
-                                </Link>
-                                <ul class='dropdown-menu dropdown-menu-dark'>
-                                    <li>
-                                        <Link class='dropdown-item' to={'/'}>
-                                            Something else
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link class='dropdown-item' to={'/'}>
-                                            Another Thing
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <hr class='dropdown-divider' />
-                                    </li>
-                                    <li>
-                                        <Link class='dropdown-item' to={'/'}>
-                                            And Yet Another Thing
-                                        </Link>
-                                    </li>
-                                </ul>
                             </li>
                         </ul>
                     </div>

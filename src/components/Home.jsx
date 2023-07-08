@@ -62,7 +62,7 @@ export default function Home() {
                     style={{ width: '18rem' }}>
                     <img
                         id='prof-pic'
-                        src={avatar}
+                        src={avatar !== undefined ? avatar : 'me1.png'}
                         class='card-img-top'
                         alt='me'
                     />
