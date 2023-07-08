@@ -1,9 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 export default function Contact() {
-    const [subject, setSubject] = useState('')
-    const [message, setMessage] = useState('')
+    // const [subject, setSubject] = useState('')
+    // const [message, setMessage] = useState('')
 
     return (
         <div id='contact-container-1'>

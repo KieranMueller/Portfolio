@@ -189,6 +189,21 @@ svg {
     scale: 1.02;
 }
 
+.resume-btn-div {
+    display: flex;
+}
+
+.resume-btn-div > * {
+    margin: 0.5rem;
+}
+
+.download-div {
+    background-color: rgba(0, 0, 0, 0.439);
+    border-radius: 100px;
+    padding: 20px;
+    color: white;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
