@@ -165,7 +165,6 @@ svg {
     padding-left: 30px;
     padding-right: 30px;
     max-height: 200px;
-    overflow-y: scroll;
 }
 
 .carousel-caption:hover {
@@ -322,10 +321,6 @@ code {
         align-items: center;
         height: 100vh;
     }
-
-    /* #toggle-caption-btn {
-        display: none;
-    } */
 
     .carousel-caption {
         display: block;
