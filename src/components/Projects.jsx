@@ -67,9 +67,53 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='6'
                         aria-label='Slide 7'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='7'
+                        aria-label='Slide 8'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='8'
+                        aria-label='Slide 9'></button>
                 </div>
                 <div class='carousel-inner'>
                     <div class='carousel-item active'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={'https://spotify-whos-who.netlify.app/'}>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                class='btn btn-primary btn1'
+                                target='blank'
+                                to={'https://github.com/KieranMueller/WhosWho'}>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='spotify.png'
+                            class='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div class='carousel-caption d-md-block' id='cap1'>
+                            <h5>WhosWho</h5>
+                            <p>
+                                Angular project created using the free Spotify
+                                API. Users can choose genres, how many songs to
+                                use as clues, how many artists to pick from, and
+                                how many lives they get. Scores are weighted
+                                based on these factors. Users can share their
+                                score on twitter and keep track of their
+                                configurations, high scores, streaks and theme
+                                preference all saved in local storage.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
                         <div class='carousel-link'>
                             <Link
                                 class='btn btn-primary'
@@ -259,6 +303,29 @@ export default function Projects() {
                                 was so excited to make something! The site
                                 includes links to all of my beginner projects
                                 and sites.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/Portfolio'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='portfolio.png'
+                            class='d-block w-100'
+                            alt='coding project 6'
+                        />
+                        <div class='carousel-caption  d-md-block' id='cap7'>
+                            <h5>This Portfolio</h5>
+                            <p>
+                                Created with React to display personal projects.
                             </p>
                         </div>
                     </div>

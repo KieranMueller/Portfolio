@@ -11,7 +11,6 @@ import Resume from './components/Resume'
 // Add light or dark toggler.
 // add more content, projects, videos etc, pictures
 // add a little game or demo of something, add page just for demos?
-// home icon next to kieran in nav
 
 function App() {
     return (
