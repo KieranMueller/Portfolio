@@ -2,8 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Projects() {
+    const [captions, setCaptions] = React.useState(false)
+    const toggleCaptions = () => {
+        setCaptions(c => !c)
+    }
     return (
         <div id='project-container'>
+            <button class='btn btn-light toggle-btn' onClick={toggleCaptions}>
+                Toggle Captions
+            </button>
             <div id='carouselExampleIndicators' class='carousel slide'>
                 <div class='carousel-indicators'>
                     <button
@@ -91,7 +98,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption d-md-block' id='cap1'>
                             <h5>Company Management Platform</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 As a team of four, created the backend with Java
                                 Spring Boot, and the frontend with Angular in
                                 four days. Includes login authentication,
@@ -122,7 +129,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption d-md-block' id='cap1'>
                             <h5>WhosWho</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 Angular project created using the free Spotify
                                 API. Users can choose genres, how many songs to
                                 use as clues, how many artists to pick from, and
@@ -152,7 +159,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption d-md-block' id='cap1'>
                             <h5>Jasper University (Personal Project)</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 Humerous Cat University (single page app)
                                 created with Java Spring Boot and PostgreSQL for
                                 the backend, React for the frontend. Currently
@@ -185,7 +192,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption d-md-block' id='cap2'>
                             <h5>Dump N' Change (Personal Project)</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 Single page app with full CRUD functionality.
                                 Created with Java Spring Boot and MySQL for the
                                 backend, React for the frontend. Users have the
@@ -211,7 +218,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption d-md-block' id='cap3'>
                             <h5>My First CRUD App (Personal Project)</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 Created a simple CRUD application with a Java
                                 Spring Boot REST API connected to MySQL in the
                                 backend, and React for the frontend.
@@ -244,7 +251,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption d-md-block' id='cap3'>
                             <h5>Dev Duel (Cook Systems FastTrack'd)</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 My first project created with Angular. Provided
                                 with the skeleton of the project and a Next.js
                                 API using the GitHub API, the task was to use
@@ -271,7 +278,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption  d-md-block' id='cap4'>
                             <h5>Twitter API (Cook Systems FastTrack'D)</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 Implemented a functional Twitter (clone) API
                                 using Java Spring Boot and PostgreSQL. As a team
                                 of 3, we created 30 endpoints; including
@@ -300,7 +307,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption  d-md-block' id='cap5'>
                             <h5>Quiz API (Cook Systems FastTrack'D)</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 Solo project created with Java Spring Boot and
                                 PostgreSQL, implementing endpoints for a quiz
                                 API, to include quizzes, questions and answers.
@@ -326,7 +333,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption  d-md-block' id='cap6'>
                             <h5>Quizler (Cook Systems FastTrack'D)</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 Javascript assignment implementing three utility
                                 methods for a command line quiz application.
                                 Good practice using ES6 features, to include
@@ -353,7 +360,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption  d-md-block' id='cap7'>
                             <h5>My First Website</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 Created this website shortly after learning HTML
                                 and CSS. I had yet to learn much Javascript but
                                 was so excited to make something! The site
@@ -380,7 +387,7 @@ export default function Projects() {
                         />
                         <div class='carousel-caption  d-md-block' id='cap7'>
                             <h5>This Portfolio</h5>
-                            <p>
+                            <p className={captions ? 'hide' : ''}>
                                 Created with React to display personal projects.
                             </p>
                         </div>
