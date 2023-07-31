@@ -100,6 +100,13 @@ export default function Home() {
                 </div>
             </div>
             <div id='icon-container'>
+                {/* <Link
+                    target='blank'
+                    to={
+                        'https://www.credential.net/80e30dbb-d72f-4363-ae2e-c032ebbe567c#gs.3per9n'
+                    }>
+                    <img class='badge' src='badge.png' alt='badge' />
+                </Link> */}
                 <Link
                     target='blank'
                     to={

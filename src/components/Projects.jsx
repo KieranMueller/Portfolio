@@ -2,30 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Projects() {
-    let [cap, setCap] = React.useState('OFF')
-
-    const toggleCaption = () => {
-        if (cap === 'OFF') {
-            setCap('ON')
-            document.querySelector('#cap1').style.opacity = 0
-            document.querySelector('#cap2').style.opacity = 0
-            document.querySelector('#cap3').style.opacity = 0
-            document.querySelector('#cap4').style.opacity = 0
-            document.querySelector('#cap5').style.opacity = 0
-            document.querySelector('#cap6').style.opacity = 0
-            document.querySelector('#cap7').style.opacity = 0
-        } else if (cap === 'ON') {
-            document.querySelector('#cap1').style.opacity = 0.9
-            document.querySelector('#cap2').style.opacity = 0.9
-            document.querySelector('#cap3').style.opacity = 0.9
-            document.querySelector('#cap4').style.opacity = 0.9
-            document.querySelector('#cap5').style.opacity = 0.9
-            document.querySelector('#cap6').style.opacity = 0.9
-            document.querySelector('#cap7').style.opacity = 0.9
-            setCap('OFF')
-        }
-    }
-
     return (
         <div id='project-container'>
             <div id='carouselExampleIndicators' class='carousel slide'>
@@ -77,9 +53,54 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='8'
                         aria-label='Slide 9'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='9'
+                        aria-label='Slide 10'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='10'
+                        aria-label='Slide 11'></button>
                 </div>
                 <div class='carousel-inner'>
                     <div class='carousel-item active'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={
+                                    'https://www.youtube.com/watch?v=C64e8YIp3HU&t=7s'
+                                }>
+                                View Demo on YouTube
+                            </Link>
+                            <Link
+                                class='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/fasttrackd-student-work/angular-group-final-sprint-6-2023-final'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='project.png'
+                            class='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div class='carousel-caption d-md-block' id='cap1'>
+                            <h5>Company Management Platform</h5>
+                            <p>
+                                As a team of four, created the backend with Java
+                                Spring Boot, and the frontend with Angular in
+                                four days. Includes login authentication,
+                                database storage, the ability to create users,
+                                announcements, teams, projects.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
                         <div class='carousel-link'>
                             <Link
                                 class='btn btn-primary'
@@ -194,6 +215,41 @@ export default function Projects() {
                                 Created a simple CRUD application with a Java
                                 Spring Boot REST API connected to MySQL in the
                                 backend, and React for the frontend.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={
+                                    'https://www.youtube.com/watch?v=KGV7CNu7WLw&t=41s'
+                                }>
+                                View Demo on YouTube
+                            </Link>
+                            <Link
+                                class='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/Dev-Duel'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='duel1.png'
+                            class='d-block w-100'
+                            alt='coding project 3'
+                        />
+                        <div class='carousel-caption d-md-block' id='cap3'>
+                            <h5>Dev Duel (Cook Systems FastTrack'd)</h5>
+                            <p>
+                                My first project created with Angular. Provided
+                                with the skeleton of the project and a Next.js
+                                API using the GitHub API, the task was to use
+                                these endpoints to duel users head to head and
+                                decide a winner based on certain criteria.
                             </p>
                         </div>
                     </div>
@@ -351,12 +407,6 @@ export default function Projects() {
                     <span class='visually-hidden'>Next</span>
                 </button>
             </div>
-            <button
-                onClick={toggleCaption}
-                className='btn btn-primary'
-                id='toggle-caption-btn'>
-                Toggle Caption: {cap}
-            </button>
         </div>
     )
 }
