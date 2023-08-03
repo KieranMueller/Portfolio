@@ -6,11 +6,8 @@ export default function Resume() {
             <div className='download-div'>Download My Resume</div>
             <img src='resume.png' alt='resume' id='resume-img' />
             <div className='resume-btn-div'>
-                <a href='Resume.docx' download={'Kieran Mueller Resume'}>
-                    <button class='btn btn-primary'>Download Word.docx</button>
-                </a>
                 <a
-                    href='Resume-pdf-cook.pdf'
+                    href='resume-personal.pdf'
                     download={'Kieran Mueller Resume'}>
                     <button class='btn btn-primary'>Download PDF</button>
                 </a>
