@@ -39,16 +39,17 @@ export default function Home() {
                         <div class='card-body' id='desc-text-div'>
                             <h5 class='card-text'>Hey There!</h5>
                             <p class='card-text'>
-                                My name is Kieran and I'm a 24 year old,
-                                aspiring full-stack developer from Minneapolis,
-                                MN. I graduated from the University of Minnesota
-                                with a B.S. in Business Marketing Education, but
-                                found my true passion after College. I am
-                                currently enrolled in the FastTrack'D Program at
-                                Cook Systems, and I'm loving it! I enjoy problem
-                                solving and learning more every day. Click the
-                                button below to view a few of my recent
-                                projects!
+                                My name is Kieran and I'm a 24 year old
+                                full-stack developer from Minneapolis, MN. I
+                                graduated from the University of Minnesota with
+                                a B.S. in Business Marketing Education, but
+                                found my passion for coding after College. I
+                                graduated from the Cook Systems, Full-Stack
+                                Application Development FastTrack'D Program in
+                                August 2023. I currently focus on Angular and
+                                Java Spring Boot. I enjoy problem solving and
+                                learning more every day. Click the button below
+                                to view a few of my recent projects!
                             </p>
                             <Link to={'/projects'} class='btn btn-primary'>
                                 Projects
@@ -82,8 +83,9 @@ export default function Home() {
                             time mainly consists of coding, whether I am trying
                             to familiarize myself with a new language or
                             framework, or polishing a personal project. I began
-                            with HTML, CSS, and Javascript, then dove into Java,
-                            which I would say is my 'primary' language.
+                            my coding journey December 2022 with HTML, CSS, and
+                            Javascript, then dove into React, Java, Spring,
+                            Angular, and Databases
                             <hr />
                             <button onClick={showMain} class='btn btn-primary'>
                                 Return
@@ -100,13 +102,6 @@ export default function Home() {
                 </div>
             </div>
             <div id='icon-container'>
-                {/* <Link
-                    target='blank'
-                    to={
-                        'https://www.credential.net/80e30dbb-d72f-4363-ae2e-c032ebbe567c#gs.3per9n'
-                    }>
-                    <img class='badge' src='badge.png' alt='badge' />
-                </Link> */}
                 <Link
                     target='blank'
                     to={
