@@ -91,7 +91,7 @@ export default function Projects() {
                                 class='btn btn-primary btn1'
                                 target='blank'
                                 to={
-                                    'https://github.com/fasttrackd-student-work/angular-group-final-sprint-6-2023-final'
+                                    'https://github.com/KieranMueller/company-management-tool'
                                 }>
                                 View Repository
                             </Link>
