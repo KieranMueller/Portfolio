@@ -70,6 +70,11 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='10'
                         aria-label='Slide 11'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='11'
+                        aria-label='Slide 12'></button>
                 </div>
                 <div class='carousel-inner'>
                     <div class='carousel-item active'>
@@ -138,6 +143,41 @@ export default function Projects() {
                                 score on twitter and keep track of their
                                 configurations, high scores, streaks and theme
                                 preference all saved in local storage.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={
+                                    'https://kieran-angular-toolbox.netlify.app/'
+                                }>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                class='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/angular-toolbox'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='angular-toolbox.png'
+                            class='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div class='carousel-caption d-md-block' id='cap1'>
+                            <h5>Kieran's Angular Toolbox</h5>
+                            <p className={captions ? 'hide' : ''}>
+                                A site that I continously update over time. It
+                                started as a site for me to store examples of
+                                new concepts so I could quickly refer to them if
+                                needed. It's become more rounded, in hopes of
+                                helping anybody who uses Angular!
                             </p>
                         </div>
                     </div>
