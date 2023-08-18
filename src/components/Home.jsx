@@ -45,11 +45,13 @@ export default function Home() {
                                 a B.S. in Business Marketing Education, but
                                 found my passion for coding after College. I
                                 graduated from the Cook Systems, Full-Stack
-                                Application Development FastTrack'D Program in
-                                August 2023. I currently focus on Angular and
-                                Java Spring Boot. I enjoy problem solving and
-                                learning more every day. Click the button below
-                                to view a few of my recent projects!
+                                Application Development FastTrack'D Program Aug.
+                                2023. I currently focus on Angular and Java
+                                Spring Boot. I enjoy problem solving and
+                                learning more every day. Visit my YouTube below
+                                to see some projects in action, or some guitar
+                                videos... click the button below to view a few
+                                of my recent projects!
                             </p>
                             <Link to={'/projects'} class='btn btn-primary'>
                                 Projects
