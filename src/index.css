@@ -8,10 +8,17 @@ svg {
 }
 
 .background-image {
-    opacity: 0.4;
+    opacity: 0.5;
     width: 100vw;
     position: fixed;
     z-index: -1;
+    animation: pulse 80s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        scale: 1.5;
+    }
 }
 
 .hide {
@@ -87,7 +94,7 @@ svg {
     padding: 1rem;
     margin-left: 6vw;
     margin-top: 5rem;
-    opacity: 0.9;
+    opacity: 0.8;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
     transition: 0.3s;
     max-height: 33rem;
@@ -95,8 +102,8 @@ svg {
 }
 
 #prof-card:hover {
-    scale: 1.02;
-    opacity: 0.8;
+    scale: 1.01;
+    opacity: 0.95;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.489);
 }
 
@@ -110,7 +117,7 @@ svg {
 #desc-card {
     margin-top: 5rem;
     width: 30vw;
-    opacity: 0.9;
+    opacity: 0.8;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.453);
     transition: 0.3s;
     max-height: 30rem;
@@ -129,8 +136,8 @@ svg {
 }
 
 #desc-card:hover {
-    scale: 1.02;
-    opacity: 0.8;
+    scale: 1.01;
+    opacity: 0.95;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.455);
 }
 
@@ -276,7 +283,7 @@ code {
     #prof-card {
         padding: 1rem;
         margin-top: 5rem;
-        opacity: 0.9;
+        opacity: 0.8;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
         transition: 0.3s;
         max-height: 33rem;
@@ -286,7 +293,7 @@ code {
 
     #prof-card:hover {
         scale: 1;
-        opacity: 0.9;
+        opacity: 0.95;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
     }
 
