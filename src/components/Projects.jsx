@@ -101,9 +101,15 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 1'
                         />
-                        <div class='carousel-caption d-md-block' id='cap1'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
                             <h5>Company Management Platform</h5>
-                            <p className={captions ? 'hide' : ''}>
+                            <p>
                                 As a team of four, created the backend with Java
                                 Spring Boot, and the frontend with Angular in
                                 four days. Includes login authentication,
@@ -132,7 +138,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 1'
                         />
-                        <div class='carousel-caption d-md-block' id='cap1'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
                             <h5>WhosWho</h5>
                             <p className={captions ? 'hide' : ''}>
                                 Angular project created using the free Spotify
@@ -170,7 +182,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 1'
                         />
-                        <div class='carousel-caption d-md-block' id='cap1'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
                             <h5>Kieran's Angular Toolbox</h5>
                             <p className={captions ? 'hide' : ''}>
                                 A site that I continously update over time. It
@@ -197,7 +215,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 1'
                         />
-                        <div class='carousel-caption d-md-block' id='cap1'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
                             <h5>Jasper University (Personal Project)</h5>
                             <p className={captions ? 'hide' : ''}>
                                 Humerous Cat University (single page app)
@@ -230,7 +254,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 2'
                         />
-                        <div class='carousel-caption d-md-block' id='cap2'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap2'>
                             <h5>Dump N' Change (Personal Project)</h5>
                             <p className={captions ? 'hide' : ''}>
                                 Single page app with full CRUD functionality.
@@ -256,7 +286,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 3'
                         />
-                        <div class='carousel-caption d-md-block' id='cap3'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap3'>
                             <h5>My First CRUD App (Personal Project)</h5>
                             <p className={captions ? 'hide' : ''}>
                                 Created a simple CRUD application with a Java
@@ -289,7 +325,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 3'
                         />
-                        <div class='carousel-caption d-md-block' id='cap3'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap3'>
                             <h5>Dev Duel (Cook Systems FastTrack'd)</h5>
                             <p className={captions ? 'hide' : ''}>
                                 My first project created with Angular. Provided
@@ -316,7 +358,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 4'
                         />
-                        <div class='carousel-caption  d-md-block' id='cap4'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap4'>
                             <h5>Twitter API (Cook Systems FastTrack'D)</h5>
                             <p className={captions ? 'hide' : ''}>
                                 Implemented a functional Twitter (clone) API
@@ -345,7 +393,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 5'
                         />
-                        <div class='carousel-caption  d-md-block' id='cap5'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap5'>
                             <h5>Quiz API (Cook Systems FastTrack'D)</h5>
                             <p className={captions ? 'hide' : ''}>
                                 Solo project created with Java Spring Boot and
@@ -371,7 +425,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 6'
                         />
-                        <div class='carousel-caption  d-md-block' id='cap6'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap6'>
                             <h5>Quizler (Cook Systems FastTrack'D)</h5>
                             <p className={captions ? 'hide' : ''}>
                                 Javascript assignment implementing three utility
@@ -387,9 +447,7 @@ export default function Projects() {
                             <Link
                                 class='btn btn-primary'
                                 target='blank'
-                                to={
-                                    'https://inspiring-piroshki-36ce4e.netlify.app/'
-                                }>
+                                to={'https://kieran-website.netlify.app/'}>
                                 Visit Site!
                             </Link>
                         </div>
@@ -398,7 +456,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 6'
                         />
-                        <div class='carousel-caption  d-md-block' id='cap7'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap7'>
                             <h5>My First Website</h5>
                             <p className={captions ? 'hide' : ''}>
                                 Created this website shortly after learning HTML
@@ -425,7 +489,13 @@ export default function Projects() {
                             class='d-block w-100'
                             alt='coding project 6'
                         />
-                        <div class='carousel-caption  d-md-block' id='cap7'>
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap7'>
                             <h5>This Portfolio</h5>
                             <p className={captions ? 'hide' : ''}>
                                 Created with React to display personal projects.
