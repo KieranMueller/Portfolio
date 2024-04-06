@@ -39,19 +39,22 @@ export default function Home() {
                         <div class='card-body' id='desc-text-div'>
                             <h5 class='card-text'>Hey There!</h5>
                             <p class='card-text'>
-                                My name is Kieran and I'm a 24 year old
-                                full-stack developer from Minneapolis, MN. I
-                                graduated from the University of Minnesota with
-                                a B.S. in Business Marketing Education, but
-                                found my passion for coding after College. I
-                                graduated from the Cook Systems, Full-Stack
-                                Application Development FastTrack'D Program Aug.
-                                2023. I currently focus on Angular and Java
-                                Spring Boot. I enjoy problem solving and
-                                learning more every day. Visit my YouTube below
-                                to see some projects in action, or some guitar
-                                videos... click the button below to view a few
-                                of my recent projects!
+                                My name is Kieran Mueller and I'm a 25 year old
+                                junior full-stack developer from Minneapolis,
+                                MN. I graduated from the University of Minnesota
+                                in 2021 with a B.S. in Business Marketing
+                                Education, but found my passion for coding after
+                                College. I graduated from the Cook Systems,
+                                Full-Stack Application Development (FastTrack'D)
+                                Program in August 2023. I have been working in a
+                                team as a junior full-stack with FedEx Ground
+                                since September 2023, focusing on Java Spring
+                                Boot backends and Angular frontends. I enjoy
+                                problem solving and learning more every day.
+                                Visit my YouTube below to see some projects in
+                                action, or some guitar videos... click the
+                                button below to view a few of my recent
+                                projects!
                             </p>
                             <Link to={'/projects'} class='btn btn-primary'>
                                 Projects
@@ -78,14 +81,16 @@ export default function Home() {
                             style={{ display: 'none' }}
                             id='desc'>
                             Born in Robbinsdale, MN, I grew up playing hockey
-                            and baseball. I played club hockey as a Minnesota
-                            Gopher and attended ROTC. Upon graduating, I
+                            and baseball. I attended Totino-Grace High School in
+                            Fridley, MN. I played club hockey as a Minnesota
+                            Gopher and completed Army ROTC. Upon graduating, I
                             commissioned as a 2LT, Infantry Officer in the MN
-                            National Guard where I continue to serve. My free
-                            time mainly consists of coding, whether I am trying
-                            to familiarize myself with a new language or
-                            framework, or polishing a personal project. I began
-                            my coding journey December 2022 with HTML, CSS, and
+                            National Guard where I continue to serve as a
+                            Headquarters Company Executive Officer. My free time
+                            consists of coding, whether I am trying to
+                            familiarize myself with a new language or framework,
+                            or polishing a personal project. I began my coding
+                            journey December 2022 with HTML, CSS, and
                             Javascript, then dove into React, Java, Spring,
                             Angular, and Databases
                             <hr />
@@ -97,7 +102,7 @@ export default function Home() {
                             {bio}
                             <hr />
                             <button onClick={showDesc} class='btn btn-primary'>
-                                Click to learn more!
+                                Personal Bio
                             </button>
                         </p>
                     </div>

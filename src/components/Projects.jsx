@@ -75,9 +75,102 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='11'
                         aria-label='Slide 12'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='12'
+                        aria-label='Slide 13'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='13'
+                        aria-label='Slide 14'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='14'
+                        aria-label='Slide 15'></button>
                 </div>
                 <div class='carousel-inner'>
                     <div class='carousel-item active'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={'https://wordle-by-kieran.netlify.app'}>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                class='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/wordle-frontend'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='wordle.png'
+                            class='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
+                            <h5>Wordle By Kieran (Side Project)</h5>
+                            <p>
+                                Created a Wordle application (inspired by The
+                                New York Times Wordle). Players can create a
+                                custom word and send a link for others to play
+                                (backend hosted). Players can also generate an
+                                unlimited amount of games (random word API), and
+                                configure their desired word length and number
+                                of attempts. Created with Angular and Java
+                                Spring Boot.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={
+                                    'https://app.netlify.com/teams/kieranmueller/sites?creator=me&visibility=public'
+                                }>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                class='btn btn-primary btn1'
+                                target='blank'
+                                to={'https://github.com/KieranMueller'}>
+                                GitHub
+                            </Link>
+                        </div>
+                        <img
+                            src='netlify.png'
+                            class='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
+                            <h5>Netlify</h5>
+                            <p>
+                                Visit my Netlify profile to view all of my
+                                hosted side projects!
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
                         <div class='carousel-link'>
                             <Link
                                 class='btn btn-primary'
@@ -178,7 +271,7 @@ export default function Projects() {
                             </Link>
                         </div>
                         <img
-                            src='angular-toolbox.png'
+                            src='toolbox.png'
                             class='d-block w-100'
                             alt='coding project 1'
                         />
@@ -470,6 +563,42 @@ export default function Projects() {
                                 was so excited to make something! The site
                                 includes links to all of my beginner projects
                                 and sites.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={'https://kieran-color-picker.netlify.app/'}>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/Color-Picker'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='color.png'
+                            class='d-block w-100'
+                            alt='coding project 6'
+                        />
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap7'>
+                            <h5>Color Picker</h5>
+                            <p className={captions ? 'hide' : ''}>
+                                My first project leveraging the power of an API!
+                                Good times.
                             </p>
                         </div>
                     </div>
