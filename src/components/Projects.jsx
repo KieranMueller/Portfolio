@@ -97,7 +97,7 @@ export default function Projects() {
                             <Link
                                 class='btn btn-primary'
                                 target='blank'
-                                to={'https://wordle-by-kieran.netlify.app'}>
+                                to={'https://wordle.kieranmueller.com'}>
                                 Visit Site!
                             </Link>
                             <Link
