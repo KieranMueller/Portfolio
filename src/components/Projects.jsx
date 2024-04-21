@@ -97,7 +97,7 @@ export default function Projects() {
                             <Link
                                 class='btn btn-primary'
                                 target='blank'
-                                to={'https://wordle.kieranmueller.com'}>
+                                to={'https://wordle.kmcodes.com'}>
                                 Visit Site!
                             </Link>
                             <Link
