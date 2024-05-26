@@ -90,6 +90,11 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='14'
                         aria-label='Slide 15'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='15'
+                        aria-label='Slide 16'></button>
                 </div>
                 <div class='carousel-inner'>
                     <div class='carousel-item active'>
@@ -131,6 +136,47 @@ export default function Projects() {
                                 configure their desired word length and number
                                 of attempts. Created with Angular and Java
                                 Spring Boot.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={'https://compare.kmcodes.com'}>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                class='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/string-compare-17'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='string-compare.png'
+                            class='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
+                            <h5>String Compare (Side Project)</h5>
+                            <p>
+                                Created a simple, lightweight, string compare
+                                tool to help myself and other developers. I was
+                                getting tired of comparing (by eye) long URLs
+                                filled with query params while troubleshooting
+                                http communication issues between microservices
+                                for work. This can also be used to compare JWTs,
+                                long SQL queries, and much more!
                             </p>
                         </div>
                     </div>
