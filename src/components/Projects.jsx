@@ -302,9 +302,7 @@ export default function Projects() {
                             <Link
                                 class='btn btn-primary'
                                 target='blank'
-                                to={
-                                    'https://kieran-angular-toolbox.netlify.app/'
-                                }>
+                                to={'https://angular.kmcodes.com'}>
                                 Visit Site!
                             </Link>
                             <Link
