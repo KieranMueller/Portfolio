@@ -95,6 +95,11 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='15'
                         aria-label='Slide 16'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='16'
+                        aria-label='Slide 17'></button>
                 </div>
                 <div class='carousel-inner'>
                     <div class='carousel-item active'>
@@ -136,6 +141,42 @@ export default function Projects() {
                                 configure their desired word length and number
                                 of attempts. Created with Angular and Java
                                 Spring Boot.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='carousel-item'>
+                        <div class='carousel-link'>
+                            <Link
+                                class='btn btn-primary'
+                                target='blank'
+                                to={'https://game.kmcodes.com'}>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                class='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/game-theory'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='game-theory.png'
+                            class='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
+                            <h5>Game Theory</h5>
+                            <p>
+                                Play the "game theory" dilemna against my
+                                pre-programmed bot. Try to beat it!
                             </p>
                         </div>
                     </div>
