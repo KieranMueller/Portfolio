@@ -34,11 +34,11 @@ export default function Home() {
     return (
         <div id='home-container-1'>
             <div id='home-container'>
-                <div class='col-sm-6 mb-3 mb-sm-0'>
-                    <div class='card bg-dark' id='desc-card'>
-                        <div class='card-body' id='desc-text-div'>
-                            <h5 class='card-text'>Hey There!</h5>
-                            <p class='card-text'>
+                <div className='col-sm-6 mb-3 mb-sm-0'>
+                    <div className='card bg-dark' id='desc-card'>
+                        <div className='card-body' id='desc-text-div'>
+                            <h5 className='card-text'>Hey There!</h5>
+                            <p className='card-text'>
                                 My name is Kieran Mueller and I'm a 25 year old
                                 junior full-stack developer from Minneapolis,
                                 MN. I graduated from the University of Minnesota
@@ -56,28 +56,28 @@ export default function Home() {
                                 button below to view a few of my recent
                                 projects!
                             </p>
-                            <Link to={'/projects'} class='btn btn-primary'>
+                            <Link to={'/projects'} className='btn btn-primary'>
                                 Projects
                             </Link>
                         </div>
                     </div>
                 </div>
                 <div
-                    class='card bg-dark prof-card'
+                    className='card bg-dark prof-card'
                     id='prof-card'
                     style={{ width: '18rem' }}>
                     <img
                         id='prof-pic'
                         src={avatar !== undefined ? avatar : 'me1.png'}
-                        class='card-img-top'
+                        className='card-img-top'
                         alt='me'
                     />
-                    <div class='card-body'>
-                        <h3 class='card-text' id='skills'>
+                    <div className='card-body'>
+                        <h3 className='card-text' id='skills'>
                             Skills:{' '}
                         </h3>
                         <p
-                            class='card-text'
+                            className='card-text'
                             style={{ display: 'none' }}
                             id='desc'>
                             Born in Robbinsdale, MN, I grew up playing hockey
@@ -93,15 +93,13 @@ export default function Home() {
                             journey December 2022 with HTML, CSS, and
                             Javascript, then dove into React, Java, Spring,
                             Angular, and Databases
-                            <hr />
-                            <button onClick={showMain} class='btn btn-primary'>
+                            <button onClick={showMain} className='btn btn-primary mt-2'>
                                 Return
                             </button>
                         </p>
-                        <p class='card-text' id='skills-1'>
+                        <p className='card-text' id='skills-1'>
                             {bio}
-                            <hr />
-                            <button onClick={showDesc} class='btn btn-primary'>
+                            <button onClick={showDesc} className='btn btn-primary mt-2'>
                                 Personal Bio
                             </button>
                         </p>

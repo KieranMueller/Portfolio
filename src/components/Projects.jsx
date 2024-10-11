@@ -8,16 +8,16 @@ export default function Projects() {
     }
     return (
         <div id='project-container'>
-            <button class='btn btn-light toggle-btn' onClick={toggleCaptions}>
+            <button className='btn btn-light toggle-btn' onClick={toggleCaptions}>
                 Toggle Captions
             </button>
-            <div id='carouselExampleIndicators' class='carousel slide'>
-                <div class='carousel-indicators'>
+            <div id='carouselExampleIndicators' className='carousel slide'>
+                <div className='carousel-indicators'>
                     <button
                         type='button'
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='0'
-                        class='active'
+                        className='active'
                         aria-current='true'
                         aria-label='Slide 1'></button>
                     <button
@@ -100,18 +100,58 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='16'
                         aria-label='Slide 17'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='17'
+                        aria-label='Slide 18'></button>
                 </div>
-                <div class='carousel-inner'>
-                    <div class='carousel-item active'>
-                        <div class='carousel-link'>
+                <div className='carousel-inner'>
+                    <div className='carousel-item active'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
+                                target='blank'
+                                to={'https://collabpad.kmcodes.com'}>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                className='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/CollabPad-Frontend'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='collabpad.png'
+                            className='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
+                            <h5>CollabPad</h5>
+                            <p>
+                                Front and backend hosted on Azure, a clever notepad application that uses websockets for real time, bi-directional communication between users shared on a singular "note". Create shared notes and add users to collaborate on them. Inspired by google docs.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
+                            <Link
+                                className='btn btn-primary'
                                 target='blank'
                                 to={'https://wordle.kmcodes.com'}>
                                 Visit Site!
                             </Link>
                             <Link
-                                class='btn btn-primary btn1'
+                                className='btn btn-primary btn1'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/wordle-frontend'
@@ -121,7 +161,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='wordle.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 1'
                         />
                         <div
@@ -144,16 +184,16 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={'https://game.kmcodes.com'}>
                                 Visit Site!
                             </Link>
                             <Link
-                                class='btn btn-primary btn1'
+                                className='btn btn-primary btn1'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/game-theory'
@@ -163,7 +203,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='game-theory.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 1'
                         />
                         <div
@@ -180,16 +220,16 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={'https://compare.kmcodes.com'}>
                                 Visit Site!
                             </Link>
                             <Link
-                                class='btn btn-primary btn1'
+                                className='btn btn-primary btn1'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/string-compare-17'
@@ -199,7 +239,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='string-compare.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 1'
                         />
                         <div
@@ -221,10 +261,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://app.netlify.com/teams/kieranmueller/sites?creator=me&visibility=public'
@@ -232,7 +272,7 @@ export default function Projects() {
                                 Visit Site!
                             </Link>
                             <Link
-                                class='btn btn-primary btn1'
+                                className='btn btn-primary btn1'
                                 target='blank'
                                 to={'https://github.com/KieranMueller'}>
                                 GitHub
@@ -240,7 +280,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='netlify.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 1'
                         />
                         <div
@@ -257,10 +297,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://www.youtube.com/watch?v=C64e8YIp3HU&t=7s'
@@ -268,7 +308,7 @@ export default function Projects() {
                                 View Demo on YouTube
                             </Link>
                             <Link
-                                class='btn btn-primary btn1'
+                                className='btn btn-primary btn1'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/company-management-tool'
@@ -278,7 +318,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='project.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 1'
                         />
                         <div
@@ -298,16 +338,16 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={'https://spotify-whos-who.netlify.app/'}>
                                 Visit Site!
                             </Link>
                             <Link
-                                class='btn btn-primary btn1'
+                                className='btn btn-primary btn1'
                                 target='blank'
                                 to={'https://github.com/KieranMueller/WhosWho'}>
                                 View Repository
@@ -315,7 +355,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='spotify.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 1'
                         />
                         <div
@@ -338,16 +378,16 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={'https://angular.kmcodes.com'}>
                                 Visit Site!
                             </Link>
                             <Link
-                                class='btn btn-primary btn1'
+                                className='btn btn-primary btn1'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/angular-toolbox'
@@ -357,7 +397,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='toolbox.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 1'
                         />
                         <div
@@ -377,10 +417,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://www.youtube.com/watch?v=B3wsDxoG_VE'
@@ -390,7 +430,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='app3.jpg'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 1'
                         />
                         <div
@@ -416,10 +456,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://www.youtube.com/watch?v=EYw6pDSKELU&t=141s'
@@ -429,7 +469,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='app1.jpg'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 2'
                         />
                         <div
@@ -448,10 +488,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://www.youtube.com/watch?v=gzXhI4Xq9bg&t=143s'
@@ -461,7 +501,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='app2.jpg'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 3'
                         />
                         <div
@@ -479,10 +519,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://www.youtube.com/watch?v=KGV7CNu7WLw&t=41s'
@@ -490,7 +530,7 @@ export default function Projects() {
                                 View Demo on YouTube
                             </Link>
                             <Link
-                                class='btn btn-primary btn1'
+                                className='btn btn-primary btn1'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/Dev-Duel'
@@ -500,7 +540,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='duel1.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 3'
                         />
                         <div
@@ -520,10 +560,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/Twitter-API'
@@ -533,7 +573,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='app4.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 4'
                         />
                         <div
@@ -555,10 +595,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/Quiz-API'
@@ -568,7 +608,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='app6.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 5'
                         />
                         <div
@@ -589,10 +629,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={'https://github.com/KieranMueller/Tester'}>
                                 View Repository on GitHub
@@ -600,7 +640,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='app7.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 6'
                         />
                         <div
@@ -620,10 +660,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={'https://kieran-website.netlify.app/'}>
                                 Visit Site!
@@ -631,7 +671,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='app8.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 6'
                         />
                         <div
@@ -651,16 +691,16 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={'https://kieran-color-picker.netlify.app/'}>
                                 Visit Site!
                             </Link>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/Color-Picker'
@@ -670,7 +710,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='color.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 6'
                         />
                         <div
@@ -687,10 +727,10 @@ export default function Projects() {
                             </p>
                         </div>
                     </div>
-                    <div class='carousel-item'>
-                        <div class='carousel-link'>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
                             <Link
-                                class='btn btn-primary'
+                                className='btn btn-primary'
                                 target='blank'
                                 to={
                                     'https://github.com/KieranMueller/Portfolio'
@@ -700,7 +740,7 @@ export default function Projects() {
                         </div>
                         <img
                             src='portfolio.png'
-                            class='d-block w-100'
+                            className='d-block w-100'
                             alt='coding project 6'
                         />
                         <div
@@ -718,24 +758,24 @@ export default function Projects() {
                     </div>
                 </div>
                 <button
-                    class='carousel-control-prev'
+                    className='carousel-control-prev'
                     type='button'
                     data-bs-target='#carouselExampleIndicators'
                     data-bs-slide='prev'>
                     <span
-                        class='carousel-control-prev-icon'
+                        className='carousel-control-prev-icon'
                         aria-hidden='true'></span>
-                    <span class='visually-hidden'>Previous</span>
+                    <span className='visually-hidden'>Previous</span>
                 </button>
                 <button
-                    class='carousel-control-next'
+                    className='carousel-control-next'
                     type='button'
                     data-bs-target='#carouselExampleIndicators'
                     data-bs-slide='next'>
                     <span
-                        class='carousel-control-next-icon'
+                        className='carousel-control-next-icon'
                         aria-hidden='true'></span>
-                    <span class='visually-hidden'>Next</span>
+                    <span className='visually-hidden'>Next</span>
                 </button>
             </div>
         </div>

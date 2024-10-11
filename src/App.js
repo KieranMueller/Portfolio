@@ -16,10 +16,10 @@ function App() {
     return (
         <Router>
             <picture>
-                <source media='(min-width: 1000px)' srcset='minneapolis.jpg' />
-                <source media='(min-width: 0px)' srcset='minneapolis3.jpg' />
+                <source media='(min-width: 1000px)' srcSet='minneapolis.jpg' />
+                <source media='(min-width: 0px)' srcSet='minneapolis3.jpg' />
                 <img
-                    class='background-image'
+                    className='background-image'
                     src='minneapolis.jpg'
                     alt='the city of minneapolis'
                 />

@@ -9,7 +9,7 @@ export default function Resume() {
                 <a
                     href='resume-personal.pdf'
                     download={'Kieran Mueller Resume'}>
-                    <button class='btn btn-primary'>Download PDF</button>
+                    <button className='btn btn-primary'>Download PDF</button>
                 </a>
             </div>
         </div>
