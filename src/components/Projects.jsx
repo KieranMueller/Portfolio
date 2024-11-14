@@ -8,7 +8,9 @@ export default function Projects() {
     }
     return (
         <div id='project-container'>
-            <button className='btn btn-light toggle-btn' onClick={toggleCaptions}>
+            <button
+                className='btn btn-light toggle-btn'
+                onClick={toggleCaptions}>
                 Toggle Captions
             </button>
             <div id='carouselExampleIndicators' className='carousel slide'>
@@ -105,9 +107,56 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='17'
                         aria-label='Slide 18'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='18'
+                        aria-label='Slide 19'></button>
                 </div>
                 <div className='carousel-inner'>
                     <div className='carousel-item active'>
+                        <div className='carousel-link'>
+                            <Link
+                                className='btn btn-primary'
+                                target='blank'
+                                to={'https://performance-graphs.kmcodes.com'}>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                className='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/strava-graphs'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='strava.png'
+                            className='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
+                            <h5>Performance Graphs</h5>
+                            <p>
+                                Created to easily view workout data, performance
+                                graphs utilizes the Strava API to plot
+                                activities on overlapping line graphs (using
+                                chart js). I created the site to better
+                                visualize my cycling progress over time.
+                                OAuth2.0 login integrated. Created with Angular,
+                                hosted on Azure as a static web app. Responsive
+                                design optimized for all screen sizes/devices.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='carousel-item'>
                         <div className='carousel-link'>
                             <Link
                                 className='btn btn-primary'
@@ -138,7 +187,12 @@ export default function Projects() {
                             id='cap1'>
                             <h5>CollabPad</h5>
                             <p>
-                                Front and backend hosted on Azure, a clever notepad application that uses websockets for real time, bi-directional communication between users shared on a singular "note". Create shared notes and add users to collaborate on them. Inspired by google docs.
+                                Front and backend hosted on Azure, a clever
+                                notepad application that uses websockets for
+                                real time, bi-directional communication between
+                                users shared on a singular "note". Create shared
+                                notes and add users to collaborate on them.
+                                Inspired by google docs.
                             </p>
                         </div>
                     </div>
