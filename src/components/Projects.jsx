@@ -112,9 +112,54 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='18'
                         aria-label='Slide 19'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='19'
+                        aria-label='Slide 20'></button>
                 </div>
                 <div className='carousel-inner'>
                     <div className='carousel-item active'>
+                        <div className='carousel-link'>
+                            <Link
+                                className='btn btn-primary'
+                                target='blank'
+                                to={
+                                    'https://www.npmjs.com/package/nearest-prime'
+                                }>
+                                npm Repository
+                            </Link>
+                            <Link
+                                className='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/nearest-prime'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='nearest-prime.png'
+                            className='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
+                            <h5>nearest-prime</h5>
+                            <p>
+                                A simple NPM Package that exports a function,
+                                which takes a number and returns the nearest
+                                prime number. Created as a "hello world" to
+                                writing npm packages.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='carousel-item'>
                         <div className='carousel-link'>
                             <Link
                                 className='btn btn-primary'

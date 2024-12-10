@@ -2,6 +2,13 @@
     text-align: center;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;
