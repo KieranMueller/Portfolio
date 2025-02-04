@@ -117,6 +117,11 @@ export default function Projects() {
                         data-bs-target='#carouselExampleIndicators'
                         data-bs-slide-to='19'
                         aria-label='Slide 20'></button>
+                    <button
+                        type='button'
+                        data-bs-target='#carouselExampleIndicators'
+                        data-bs-slide-to='20'
+                        aria-label='Slide 21'></button>
                 </div>
                 <div className='carousel-inner'>
                     <div className='carousel-item active'>
@@ -156,6 +161,43 @@ export default function Projects() {
                                 which takes a number and returns the nearest
                                 prime number. Created as a "hello world" to
                                 writing npm packages.
+                            </p>
+                        </div>
+                    </div>
+                    <div className='carousel-item'>
+                        <div className='carousel-link'>
+                            <Link
+                                className='btn btn-primary'
+                                target='blank'
+                                to={'https://training-zones.kmcodes.com'}>
+                                Visit Site!
+                            </Link>
+                            <Link
+                                className='btn btn-primary btn1'
+                                target='blank'
+                                to={
+                                    'https://github.com/KieranMueller/training-zones'
+                                }>
+                                View Repository
+                            </Link>
+                        </div>
+                        <img
+                            src='training-zones.png'
+                            className='d-block w-100'
+                            alt='coding project 1'
+                        />
+                        <div
+                            className={
+                                captions
+                                    ? 'hide'
+                                    : 'carousel-caption d-md-block'
+                            }
+                            id='cap1'>
+                            <h5>Training Zones</h5>
+                            <p>
+                                A simple static web app for calculating cycling
+                                training zones based on a user's max heart rate,
+                                and functional threshold power (FTP)
                             </p>
                         </div>
                     </div>
